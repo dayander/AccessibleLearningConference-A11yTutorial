@@ -1,12 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {BrowserRouter} from 'react-router-dom';
+import {Provider} from 'react-redux';
+import {applyMiddleware, createStore} from 'redux';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+import {a11ySwitcher} from './stateControllers/reducers/index'
+import RoutesAndNav from './components/routes'
+//import {ShowAllAccessibility} from './stateControllers/actions/skiHillHeadingSwitcher'
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+const middleware =  applyMiddleware(logger, thunk);
+
+const store = createStore(a11ySwitcher, middleware);
+
+
+
+
+console.log('getState',store.getState());
+
+
+const App = (
+        <Provider store={store}>
+                <BrowserRouter>
+
+                    {RoutesAndNav}
+                </BrowserRouter>
+        </Provider>
+);
+
+ReactDOM.render(
+    App, document.getElementById('root')
+);
+
+
+
+
+
+
