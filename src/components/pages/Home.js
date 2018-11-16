@@ -4,7 +4,7 @@ import {PageFocus} from "../a11y/PageFocus";
 import SkiHillData from '../../data/SkiHillData'
 import VisibleSkiHillList from "../containers/VisibleSkiHillList";
 
-import {FilterButtonHolder} from '../layout/FilterButtonHolder';
+
 import ConnectedHeadingLevelOne from "../containers/connectedHeadingLevelOne";
 
 class Home extends React.Component{
@@ -34,7 +34,7 @@ class Home extends React.Component{
         return(
             <main>
             <div>
-                <FilterButtonHolder  />
+                
                 <ConnectedHeadingLevelOne>
                     Twin Cities Ski Areas
                 </ConnectedHeadingLevelOne>

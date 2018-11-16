@@ -11,7 +11,6 @@ const switchHeadingA11y = (skiHillHeadings, filter) =>{
         case accessibilityFilters.SHOW_ACCESSIBLE:
             return skiHillHeadings
         default:
-            console.log('state.SkiSwitch', filter)
             return [skiHillHeadings]
 
     }
