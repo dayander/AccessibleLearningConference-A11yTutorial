@@ -22,7 +22,7 @@ const mapStateToProps = state => (
 
     {
         filter: state.SwitchSkiA11y
-})
+    })
 
 
 

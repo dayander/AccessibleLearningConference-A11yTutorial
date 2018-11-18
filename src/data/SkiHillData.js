@@ -3,7 +3,8 @@ const SkiHillData = [
         "name": "Hyland Hills Ski Area",
         "location": "Bloomington, MN",
         "vertical":"175 ft",
-        "longestRun": ""
+        "imgPath": "",
+        "imgSourceURL": "https://www.threeriversparks.org/location/hyland-hills-ski-area"
 
 
 
