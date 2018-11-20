@@ -9,9 +9,12 @@ import Contact from "./pages/Contact";
 
 import {Header} from './layout/Header';
 
+
+
 const Routes = (
     <div>
         <Header/>
+
   <Switch>
 
 
@@ -21,6 +24,9 @@ const Routes = (
 
 
   </Switch>
+
+
+
     </div>
 );
 
