@@ -2,18 +2,25 @@ import React from 'react';
 import {modalFilters} from "../../stateControllers/actions/ModalActions";
 import ReactModal from 'react-modal';
 import ConnectedCloseModalButton from '../containers/ConnectedCloseModalButton';
-export const ModalBaseReactModal = ({filter, skiHill}) => {
+export const ModalBaseReactModal = ({filter, skiHill, onRequestClose}) => {
 
     let opener;
 
     if (filter == modalFilters.MODAL_OPENED) {
+        const getParent = () => {
+            return (document.querySelector('body'))
+        }
+
         var app = document.querySelector('body');
         app.style.overflow = 'hidden';
         opener = true;
 
 
+
+
+
         return (
-            <ReactModal isOpen={opener}>
+            <ReactModal  isOpen={opener} onRequestClose={onRequestClose}   shouldCloseOnEsc={true} contentLabel="Trail Map Modal" ariaHideApp={false}>
                 <div className={'modal-wrapper'}>
                     <div className={'modal-popover'}>
                         <div className={'modal-heading-box'}>
@@ -40,6 +47,11 @@ export const ModalBaseReactModal = ({filter, skiHill}) => {
 
         )
     }else {
+
+        var app = document.querySelector('body');
+        app.style.overflow = '';
+        opener = false;
+
         return(
             null
         )

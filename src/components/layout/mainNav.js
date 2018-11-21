@@ -9,8 +9,16 @@ class MainNav extends React.Component {
 
                 <div>
             <nav>
-                <Link to='/'>Home </Link>
-                <Link to='/contact'> Contact</Link>
+                <div className={'container'}>
+                    <ul className={'navbar-nav'}>
+                        <li>
+                            <Link to='/'>Home </Link>
+                        </li>
+                        <li>
+                            <Link to='/contact'> Contact</Link>
+                        </li>
+                    </ul>
+                </div>
 
             </nav>
 

@@ -1,5 +1,14 @@
+$dark-blue: #03387F;
+$lightest-blue: #539CFF;
+
+*:focus{
+  outline: solid red;
+}
+
 body{
   font-family: roboto;
+  max-width: 960px;
+  margin: 0 auto;
   
 }
 
@@ -12,7 +21,7 @@ body{
   top: 10%;
   left: 0;
   right: 0;
-  background: rgba(255,255,255,1.0);
+  background: $dark-blue;
 
   max-width: 800px;
   margin: 0 auto;
@@ -37,11 +46,17 @@ body{
 
   overflow: hidden;
 
+
 }
 
 
 .well{
   margin: 0 30px;
+  background: white;
+  p{
+    padding: 20px;
+    overflow: scroll;
+  }
 }
 
 .modal-close-box{
@@ -51,5 +66,110 @@ body{
 
 
 .modal-heading-box{
-  padding: 0 20px;
+
+
+  color: #ffffff;
+
+  h2{
+    padding: 0 20px;
+  }
+}
+
+
+.instructions-wrapper{
+  background: $dark-blue;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+#instructions-paragraph{
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#instructions-heading{
+  color: white;
+  font-size: 36px;
+}
+
+.instructions-button-wrapper{
+  background: white;
+}
+
+.filter-button-wrapper{
+  padding: 10px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+
+button{
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: $dark-blue;
+}
+
+.fixed-top{
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background: $lightest-blue;
+}
+
+
+nav {
+  min-height: 50px;
+  background: white;
+  border: $dark-blue solid 4px;
+  border-radius: 5px;
+
+
+  @media (min-width: 992px){
+  .container {
+    width: 970px;
+  }
+  }
+}
+
+.navbar-nav {
+  float: left;
+  margin: 0;
+  list-style-type: none;
+
+
+  li{
+    float: left;
+
+    a{
+
+
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+      line-height: 20px;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }

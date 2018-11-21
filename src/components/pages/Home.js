@@ -29,10 +29,11 @@ class Home extends React.Component{
 
     render(){
 
+        var measureHeight = document.getElementById('top-holder')
 
 
         return(
-            <main>
+            <main >
             <div>
                 
                 <ConnectedHeadingLevelOne>

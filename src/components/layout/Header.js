@@ -6,8 +6,11 @@ import VisibleInstructionsHeader from '../containers/VisibleInstructionsHeader';
 
 
 export const Header = () => {
+
+
+
   return(
-      <div>
+      <div id={'top-holder'} className={'fixed-top'}>
           <VisibleInstructionsHeader/>
           <FilterButtonHolder/>
           <MainNav />

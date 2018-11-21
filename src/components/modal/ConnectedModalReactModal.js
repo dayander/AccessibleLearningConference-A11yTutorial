@@ -1,5 +1,7 @@
 import { connect } from 'react-redux'
 import {ModalBaseReactModal} from "./ModalBaseReactModal";
+import {modalFilters} from "../../stateControllers/actions/ModalActions";
+import {setModalFilter} from "../../stateControllers/actions/ModalActions";
 
 
 const mapStateToProps = (state, ownProps) => {
@@ -13,10 +15,21 @@ const mapStateToProps = (state, ownProps) => {
     )
 };
 
+const mapDispatchToProps = (dispatch, ownProps)=>{
+    return(
+        {
+            onRequestClose: (e) => {
+                console.log(e)
+                return (dispatch(setModalFilter(modalFilters.MODAL_CLOSED, ownProps)))
+            }
+        }
+    )
+}
 
 
 
-const ConnectedModalReactModal = connect(mapStateToProps)(ModalBaseReactModal);
+
+const ConnectedModalReactModal = connect( mapStateToProps, mapDispatchToProps)(ModalBaseReactModal);
 
 
 export default ConnectedModalReactModal;
