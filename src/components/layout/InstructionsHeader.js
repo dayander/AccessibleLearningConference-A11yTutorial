@@ -22,7 +22,7 @@ export const InstructionsHeader = ({filter}) =>{
                 <InstructionsParagraph/>
 
                 <CloseMessageButton >
-                    Close
+                    Close Instructions
                 </CloseMessageButton>
 
 

@@ -7,11 +7,13 @@ import {SubmitContactButton} from "./SubmitContactButton";
 export const NotA11yContactForm = (props) => {
 
     return(
-        <form>
-            <NameInputWithoutLabel/>
-            <MessageInputWithoutLabel/>
-            <SubmitContactButton />
-        </form>
+        <div className={'contact-wrapper'}>
+            <form>
+                <NameInputWithoutLabel/>
+                <MessageInputWithoutLabel/>
+                <SubmitContactButton />
+            </form>
+        </div>
     )
 
 

@@ -6,11 +6,11 @@ import {accessibilityFilters} from "../../stateControllers/actions/skiHillHeadin
 export const FilterButtonHolder = () => (
     <div className={'filter-button-wrapper'}>
         <FilterLink filter={accessibilityFilters.SHOW_ACCESSIBLE}>
-            Accessible
+            Show Accessible Verison
         </FilterLink>
 
         <FilterLink filter={accessibilityFilters.SHOW_INACCESSIBLE}>
-           Not Accessible
+           Show Not Accessible Version
         </FilterLink>
     </div>
 )

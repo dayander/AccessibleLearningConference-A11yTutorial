@@ -11,7 +11,7 @@ export const DetailsCardNotA11y = (props) => {
 
     console.log(props);
   return(
-      <div>
+      <div className={'details-wrapper'}>
           <h5>Details:</h5>
           <p>• Vertical: {props.vertical} </p>
           <p>• Trail Map: <VisibleModalLink {...props} >Click Here</VisibleModalLink></p>

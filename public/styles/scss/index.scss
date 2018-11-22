@@ -1,19 +1,15 @@
 $dark-blue: #03387F;
 $lightest-blue: #539CFF;
 
-*:focus{
-  outline: solid red;
-}
+
 
 body{
   font-family: roboto;
   max-width: 960px;
   margin: 0 auto;
+
   
 }
-
-
-
 
 
 .modal-popover{
@@ -44,7 +40,7 @@ body{
 .modal-img-wrapper{
   height: 400px;
 
-  overflow: hidden;
+  overflow: scroll;
 
 
 }
@@ -152,14 +148,22 @@ nav {
   li{
     float: left;
 
+
+
     a{
 
 
+      color: $dark-blue;
       position: relative;
       display: block;
-      padding: 10px 15px;
+      padding: 15px;
       line-height: 20px;
       text-decoration: none;
+
+      :active{
+        background: $dark-blue;
+        color: #fff;
+      }
     }
   }
 }
@@ -172,4 +176,140 @@ nav {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+
+.skihill-card-wrapper{
+  background: $dark-blue;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+
+
+
+
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+@media (min-width: 730px){
+  .skihill-card-wrapper{
+    width: 45%;
+  }
+}
+
+
+.skihill-heading-location{
+
+  border-radius: 5px;
+  background: #ffffff;
+  margin: 10px 15px;
+  padding: 5px 10px;
+
+}
+
+
+.details-wrapper{
+  color: white;
+  margin-left: 15px;
+}
+
+
+.details-list-a11y{
+  -moz-column-count: 4;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  column-count: 4;
+  column-gap: 20px;
+}
+
+
+
+.flexer{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+.details-list{
+
+
+  li{
+    margin-top: 10px;
+  }
+
+}
+
+
+
+
+footer{
+  background: $dark-blue;
+
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  color: #fff;
+  p{
+    display: inline-block;
+  }
+  a{
+    color: white;
+  }
+}
+
+
+.contact-wrapper{
+  border: solid 2px $lightest-blue;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+
+}
+
+input{
+  margin: 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  font-size: 14px;
+
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+
+}
+
+
+
+.submit-button{
+  border: solid 2px $lightest-blue;
+  border-radius: 5px;
 }

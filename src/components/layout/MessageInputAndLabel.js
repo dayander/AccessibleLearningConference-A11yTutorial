@@ -5,9 +5,9 @@ export const MessageInputAndLabel = (props) =>{
 
 
     return(
-        <div>
+        <div className={'form-group'} >
             <label id={'message-label-a11y'} htmlFor="message" >Message: </label>
-            <textarea type={'text'} id={'message'} name={'message'} />
+            <textarea className={'form-control'} placeholder={'Message'} type={'text'} id={'message'} name={'message'} />
         </div>
     )
 };

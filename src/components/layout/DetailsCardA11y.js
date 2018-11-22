@@ -4,9 +4,9 @@ import ConnectedModalBaseReactModal from '../modal/ConnectedModalReactModal';
 
 
 export const DetailsCardA11y = (props) => (
-    <div>
+    <div className={'details-wrapper'}>
         <h3>Details:</h3>
-        <ul>
+        <ul className={'details-list'}>
             <li>Vertical: {props.vertical}</li>
             <li><VisibleModalLink {...props} >See {props.name} Trail Map </VisibleModalLink> </li>
         </ul>

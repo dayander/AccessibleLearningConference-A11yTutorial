@@ -40,9 +40,11 @@ export const SkiHillHeading3 = (props) => {
 export const SkiHillCardA11y = (props) => {
 
     return(
-        <div>
-            <SkiHillHeading2 name={props.name} />
-            <LocationA11y location={props.location} />
+        <div className={'skihill-card-wrapper'}>
+            <div className={'skihill-heading-location'}>
+                <SkiHillHeading2 name={props.name} />
+                <LocationA11y location={props.location} />
+            </div>
             <DetailsCardA11y {...props} />
 
         </div>
@@ -52,9 +54,13 @@ export const SkiHillCardA11y = (props) => {
 
 export const SkiHillCardNotA11y = (props) => {
     return(
-        <div>
-            <SkiHillHeading3 name={props.name}/>
-            <LocationNotA11y location={props.location}/>
+        <div className={'skihill-card-wrapper'} >
+
+            <div className={'skihill-heading-location'}>
+                <SkiHillHeading3 name={props.name}/>
+                <LocationNotA11y location={props.location}/>
+
+            </div>
             <DetailsCardNotA11y {...props}/>
         </div>
     )

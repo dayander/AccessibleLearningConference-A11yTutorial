@@ -5,9 +5,9 @@ export const NameInputAndLabel = (props) =>{
 
 
     return(
-        <div>
+        <div className={'form-group'}>
             <label id={'name-label-a11y'} htmlFor={'name'}  >Name: </label>
-            <input type={'text'} id={'name'} name={'name'} />
+            <input className={'form-control'} placeholder={'First and Last'} type={'text'} id={'name'} name={'name'} />
         </div>
     )
 };

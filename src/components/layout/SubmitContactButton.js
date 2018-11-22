@@ -2,7 +2,7 @@ import React from 'react';
 
 export const SubmitContactButton = () => {
   return(
-      <button type="submit">
+      <button className={'submit-button'} type="submit">
           Submit Contact Form
       </button>
   )

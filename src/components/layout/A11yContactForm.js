@@ -8,10 +8,12 @@ export const A11yContactForm = (props) => {
 
 
     return(
-        <form>
-            <NameInputAndLabel/>
-            <MessageInputAndLabel/>
-            <SubmitContactButton />
-        </form>
+        <div className={'contact-wrapper'}>
+            <form>
+                <NameInputAndLabel/>
+                <MessageInputAndLabel/>
+                <SubmitContactButton />
+            </form>
+        </div>
     )
 };
