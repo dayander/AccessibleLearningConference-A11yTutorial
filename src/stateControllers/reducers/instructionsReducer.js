@@ -6,7 +6,7 @@ export const OpenAndCloseInstructions = (state = instructionsFilters.INSTRUCTION
 
     switch (action.type){
         case "SET_INSTRUCTIONS_FILTER":
-            return action.filter
+            return action.filter;
         default:
 
             return state;

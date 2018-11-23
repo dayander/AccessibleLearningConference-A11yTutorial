@@ -6,12 +6,9 @@ export const ModalBaseReactModal = ({filter, skiHill, onRequestClose}) => {
 
     let opener;
 
-    if (filter == modalFilters.MODAL_OPENED) {
-        const getParent = () => {
-            return (document.querySelector('body'))
-        }
+    if (filter === modalFilters.MODAL_OPENED) {
 
-        var app = document.querySelector('body');
+        let app = document.querySelector('body');
         app.style.overflow = 'hidden';
         opener = true;
 
@@ -29,7 +26,7 @@ export const ModalBaseReactModal = ({filter, skiHill, onRequestClose}) => {
 
                         <div className={'well'}>
                             <div className={'modal-img-wrapper'}>
-                                <img src={skiHill.imgPath}/>
+                                <img src={skiHill.imgPath}  alt={skiHill.trailMapAlt}/>
                             </div>
 
                             <p>Photo Courtesy of: <a href={skiHill.imgSourceURL}>{skiHill.imgSourceURL}</a></p>
@@ -48,7 +45,7 @@ export const ModalBaseReactModal = ({filter, skiHill, onRequestClose}) => {
         )
     }else {
 
-        var app = document.querySelector('body');
+        let app = document.querySelector('body');
         app.style.overflow = '';
         opener = false;
 

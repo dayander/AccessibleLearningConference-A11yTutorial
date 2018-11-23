@@ -19,7 +19,6 @@ const mapDispatchToProps = (dispatch, ownProps)=>{
     return(
         {
             onRequestClose: (e) => {
-                console.log(e)
                 return (dispatch(setModalFilter(modalFilters.MODAL_CLOSED, ownProps)))
             }
         }

@@ -8,7 +8,7 @@ class Contact extends React.Component{
 
     componentDidMount(){
 
-        PageTitle('Contact Twin City Ski Areas')
+        PageTitle('Contact Twin City Ski Areas');
 
         PageFocus()
 

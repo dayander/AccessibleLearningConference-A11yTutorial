@@ -1,9 +1,5 @@
 import {accessibilityFilters} from "../actions/skiHillHeadingSwitcher";
 
-const initialState = {
-    isA11y: false
-};
-
 
 export const SwitchSkiA11y = (state = accessibilityFilters.SHOW_INACCESSIBLE, action)=>{
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import {ShowAllAccessibility} from "../../stateControllers/actions/skiHillHeadingSwitcher";
 import {HeadingToggleButton} from '../layout/HeadingToggleButton';
 import { connect } from 'react-redux';
 

@@ -4,11 +4,7 @@ import {ModalLink} from '../layout/ModalLink';
 import {modalFilters} from "../../stateControllers/actions/ModalActions";
 
 
-const mapStateToProps = state => (
 
-    {
-        filter: state.OpenAndCloseModal
-    });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
     onClick: () => dispatch(setModalFilter(modalFilters.MODAL_OPENED, ownProps))
