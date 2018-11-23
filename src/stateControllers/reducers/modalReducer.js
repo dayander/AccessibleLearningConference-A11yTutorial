@@ -12,12 +12,12 @@ export const OpenAndCloseModal = (state = initialState, action)=>{
             const updatedItems = state.map(item => {
                 if(item.name === action.skiHill.name){
                     item.modalOpen = action.filter;
-
                     return { ...item}
                 }
+
                 return item
-            })
-            return updatedItems
+            });
+            return updatedItems;
         default:
             return state;
 
