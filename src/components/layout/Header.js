@@ -10,10 +10,12 @@ export const Header = () => {
 
 
   return(
-      <div id={'top-holder'} className={'fixed-top'}>
-          <VisibleInstructionsHeader/>
-          <FilterButtonHolder/>
-          <MainNav />
-      </div>
+      <header>
+          <div id={'top-holder'} className={'fixed-top'}>
+              <VisibleInstructionsHeader/>
+              <FilterButtonHolder/>
+              <MainNav />
+          </div>
+      </header>
   )
 };
