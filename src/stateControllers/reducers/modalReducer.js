@@ -1,5 +1,3 @@
-import {modalFilters} from "../actions/ModalActions";
-import {accessibilityFilters} from "../actions/skiHillHeadingSwitcher";
 import SkiHillData from "../../data/SkiHillData";
 
 
@@ -12,7 +10,7 @@ export const OpenAndCloseModal = (state = initialState, action)=>{
     switch (action.type){
         case "SET_MODAL_FILTER":
             const updatedItems = state.map(item => {
-                if(item.name == action.skiHill.name){
+                if(item.name === action.skiHill.name){
                     item.modalOpen = action.filter;
 
                     return { ...item}

@@ -9,14 +9,14 @@ export const SwitchSkiA11y = (state = accessibilityFilters.SHOW_INACCESSIBLE, ac
 
   switch (action.type){
       case "SET_ACCESSIBILITY_FILTER":
-          return action.filter
+          return action.filter;
 
       case "SHOW_ACCESSIBLE":
-          console.log("not default")
-          return {isA11y: !state.isA11y}
+
+          return {isA11y: !state.isA11y};
 
       default:
-          console.log("default run", state)
+
           return state;
 
   }

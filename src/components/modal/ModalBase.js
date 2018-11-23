@@ -7,8 +7,8 @@ import ConnectedCloseModalButton from '../containers/ConnectedCloseModalButton';
 export const ModalBase = ({filter, skiHill}) => {
 
 
-    if(filter == modalFilters.MODAL_OPENED){
-        var app = document.querySelector('body');
+    if(filter === modalFilters.MODAL_OPENED){
+        let app = document.querySelector('body');
         app.style.overflow = 'hidden';
 
 
@@ -40,7 +40,7 @@ export const ModalBase = ({filter, skiHill}) => {
 
         )
     }else{
-        var app = document.querySelector('body');
+        let app = document.querySelector('body');
         app.style.overflow = '';
 
 

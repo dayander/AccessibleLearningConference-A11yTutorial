@@ -8,9 +8,7 @@ import VisibleSkiHillList from "../containers/VisibleSkiHillList";
 import ConnectedHeadingLevelOne from "../containers/connectedHeadingLevelOne";
 
 class Home extends React.Component{
-    constructor(props) {
-        super(props);
-    }
+
 
 
     componentDidMount() {
@@ -28,9 +26,6 @@ class Home extends React.Component{
 
 
     render(){
-
-        var measureHeight = document.getElementById('top-holder')
-
 
         return(
             <main >

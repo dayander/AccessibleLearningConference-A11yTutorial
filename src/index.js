@@ -17,10 +17,6 @@ const store = createStore(a11ySwitcher, middleware);
 
 
 
-
-console.log('getState',store.getState());
-
-
 const App = (
         <Provider store={store}>
                 <BrowserRouter>

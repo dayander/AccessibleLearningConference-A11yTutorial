@@ -5,9 +5,6 @@ import {accessibilityFilters} from "../../stateControllers/actions/skiHillHeadin
 const HeadingLevelOne =({ children, filter})=> {
         let styles;
 
-
-        console.log('filter',filter)
-
         if(filter === accessibilityFilters.SHOW_ACCESSIBLE){
             styles = {
                 color: "#000"

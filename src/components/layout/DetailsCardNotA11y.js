@@ -6,10 +6,6 @@ import ConnectedModalBase from '../modal/ConnectedModal';
 export const DetailsCardNotA11y = (props) => {
 
 
-
-
-
-    console.log(props);
   return(
       <div className={'details-wrapper'}>
           <h5>Details:</h5>
